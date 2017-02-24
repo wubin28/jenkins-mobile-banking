@@ -10,6 +10,7 @@ import static org.junit.Assert.assertTrue;
 public class LoginTest {
     @Test
     public void should_be_successful_if_username_and_password_are_correct() {
-        assertTrue(true);
+        Login login = new Login();
+        assertTrue(login.loginWithUsernameAndPassword("demo", "mode"));
     }
 }
