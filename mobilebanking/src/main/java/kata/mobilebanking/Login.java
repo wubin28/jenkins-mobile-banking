@@ -5,6 +5,6 @@ package kata.mobilebanking;
  */
 public class Login {
     public boolean loginWithUsernameAndPassword(String username, String password) {
-        return false;
+        return true;
     }
 }
