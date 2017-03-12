@@ -2,6 +2,7 @@ node {
     stage('COMMIT') {
         echo 'The COMMIT stage'
         checkout scm
+        sh 'mvn clean test'
     }
     stage('ACCEPTANCE') {
         echo 'The ACCEPTANCE stage'
