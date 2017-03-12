@@ -1,11 +1,9 @@
 node {
-    stage('Build') {
-        echo 'Building.. .'
+    stage('COMMIT') {
+        echo 'The COMMIT stage'
+        checkout scm
     }
-    stage('Test') {
-        echo 'Building.. .'
-    }
-    stage('Deploy') {
-        echo 'Deploying.. .'
+    stage('ACCEPTANCE') {
+        echo 'The ACCEPTANCE stage'
     }
 }
