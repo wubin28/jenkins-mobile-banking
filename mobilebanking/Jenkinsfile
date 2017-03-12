@@ -2,7 +2,7 @@ node {
     stage('COMMIT') {
         echo 'The COMMIT stage'
         checkout scm
-        sh 'mvn clean test'
+        sh 'mvn -f ~/OOR/katas/remote/jenkins-mobile-banking/mobilebanking/pom.xml clean test'
     }
     stage('ACCEPTANCE') {
         echo 'The ACCEPTANCE stage'
