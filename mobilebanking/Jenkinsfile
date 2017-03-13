@@ -5,6 +5,6 @@ node {
     }
     stage('ACCEPTANCE') {
         echo 'The ACCEPTANCE stage'
-        sh 'pybot ~/OOR/katas/remote/jenkins-mobile-banking/robotframework-webdemo/login_tests'
+        sh 'robot ~/OOR/katas/remote/jenkins-mobile-banking/robotframework-webdemo/login_tests'
     }
 }
