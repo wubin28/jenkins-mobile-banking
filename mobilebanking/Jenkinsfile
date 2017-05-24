@@ -1,10 +1,10 @@
 node {
     stage('COMMIT') {
         echo 'The COMMIT stage'
-        sh 'mvn -f ~/OOR/katas/remote/jenkins-mobile-banking/mobilebanking/pom.xml clean test'
+        sh 'mvn -f ~/OOR/katas/local/jenkins-mobile-banking/mobilebanking/pom.xml clean test'
     }
     stage('ACCEPTANCE') {
         echo 'The ACCEPTANCE stage'
-        sh 'robot ~/OOR/katas/remote/jenkins-mobile-banking/robotframework-webdemo/login_tests'
+        sh 'robot ~/OOR/katas/local/jenkins-mobile-banking/robotframework-webdemo/login_tests'
     }
 }
